@@ -1,0 +1,20 @@
+{
+    "name": "piano",
+    "version": "2.0.0",
+    "description": "Extension for YahBoom YB_Piano V2.0.0",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "neopixel": "github:lzty634158/pxt-neopixel"
+    },
+    "files": [
+        "README.md",
+        "main.ts",
+        "_locales/zh/piano-strings.json"
+
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true
+}
