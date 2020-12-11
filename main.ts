@@ -297,40 +297,52 @@ namespace piano {
                 c = c & temp;
             } else if (c & touch.C) {
                 pins.setAudioPin(AnalogPin.P0)
-                music.ringTone(523);
+                //music.ringTone(523);
+                music.playTone(523, music.beat(BeatFraction.Whole))
             } else if (c & touch.CD) {
                 pins.setAudioPin(AnalogPin.P0)
-                music.ringTone(554);
+                //music.ringTone(554);
+                music.playTone(554, music.beat(BeatFraction.Whole))
             } else if (c & touch.D) {
                 pins.setAudioPin(AnalogPin.P0)
-                music.ringTone(587);
+                //music.ringTone(587);
+                music.playTone(587, music.beat(BeatFraction.Whole))
             } else if (c & touch.DE) {
                 pins.setAudioPin(AnalogPin.P0)
-                music.ringTone(622);
+                //music.ringTone(622);
+                music.playTone(622, music.beat(BeatFraction.Whole))
             } else if (c & touch.E) {
                 pins.setAudioPin(AnalogPin.P0)
-                music.ringTone(659);
+                //music.ringTone(659);
+                music.playTone(659, music.beat(BeatFraction.Whole))
             } else if (c & touch.F) {
                 pins.setAudioPin(AnalogPin.P0)
-                music.ringTone(698);
+                //music.ringTone(698);
+                music.playTone(698, music.beat(BeatFraction.Whole))
             } else if (c & touch.FG) {
                 pins.setAudioPin(AnalogPin.P0)
-                music.ringTone(740);
+                //music.ringTone(740);
+                music.playTone(740, music.beat(BeatFraction.Whole))
             } else if (c & touch.G) {
                 pins.setAudioPin(AnalogPin.P0)
-                music.ringTone(784);
+                //music.ringTone(784);
+                music.playTone(784, music.beat(BeatFraction.Whole))
             } else if (c & touch.GA) {
                 pins.setAudioPin(AnalogPin.P0)
                 music.ringTone(831);
+                //music.playTone(831, music.beat(BeatFraction.Whole))
             } else if (c & touch.A) {
                 pins.setAudioPin(AnalogPin.P0)
-                music.ringTone(880);
+                //music.ringTone(880);
+                music.playTone(880, music.beat(BeatFraction.Whole))
             } else if (c & touch.AB) {
                 pins.setAudioPin(AnalogPin.P0)
-                music.ringTone(932);
+                //music.ringTone(932);
+                music.playTone(932, music.beat(BeatFraction.Whole))
             } else if (c & touch.B) {
                 pins.setAudioPin(AnalogPin.P0)
-                music.ringTone(988);
+                //music.ringTone(988);
+                music.playTone(988, music.beat(BeatFraction.Whole))
             } else if (c == touch.None) {
                 //music.ringTone(0);
                 pins.digitalWritePin(DigitalPin.P0, 0);
