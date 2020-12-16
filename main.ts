@@ -298,57 +298,45 @@ namespace piano {
             if ((c & temp) != 0) {
                 c = c & temp;
             } else if (c & touch.C) {
-                pins.setAudioPin(AnalogPin.P0)
-                music.setVolume(123)
+                //pins.setAudioPin(AnalogPin.P0)
                 music.ringTone(523);
             } else if (c & touch.CD) {
-                pins.setAudioPin(AnalogPin.P0)
-                music.setVolume(123)
+                //pins.setAudioPin(AnalogPin.P0)
                 music.ringTone(554);
             } else if (c & touch.D) {
-                pins.setAudioPin(AnalogPin.P0)
-                music.setVolume(123)
+                //pins.setAudioPin(AnalogPin.P0)
                 music.ringTone(587);
             } else if (c & touch.DE) {
-                pins.setAudioPin(AnalogPin.P0)
-                music.setVolume(123)
+                //pins.setAudioPin(AnalogPin.P0)
                 music.ringTone(622);
             } else if (c & touch.E) {
-                pins.setAudioPin(AnalogPin.P0)
-                music.setVolume(123)
+                //pins.setAudioPin(AnalogPin.P0)
                 music.ringTone(659);
             } else if (c & touch.F) {
-                pins.setAudioPin(AnalogPin.P0)
-                music.setVolume(123)
+                //pins.setAudioPin(AnalogPin.P0)
                 music.ringTone(698);
             } else if (c & touch.FG) {
-                pins.setAudioPin(AnalogPin.P0)
-                music.setVolume(123)
+                //pins.setAudioPin(AnalogPin.P0)
                 music.ringTone(740);
             } else if (c & touch.G) {
-                pins.setAudioPin(AnalogPin.P0)
-                music.setVolume(123)
+                //pins.setAudioPin(AnalogPin.P0)
                 music.ringTone(784);
             } else if (c & touch.GA) {
-                pins.setAudioPin(AnalogPin.P0)
-                music.setVolume(123)
+                //pins.setAudioPin(AnalogPin.P0)
                 music.ringTone(831);
             } else if (c & touch.A) {
-                pins.setAudioPin(AnalogPin.P0)
-                music.setVolume(123)
+                //pins.setAudioPin(AnalogPin.P0)
                 music.ringTone(880);
             } else if (c & touch.AB) {
-                pins.setAudioPin(AnalogPin.P0)
-                music.setVolume(123)
+                //pins.setAudioPin(AnalogPin.P0)
                 music.ringTone(932);
             } else if (c & touch.B) {
-                pins.setAudioPin(AnalogPin.P0)
-                music.setVolume(123)
+                //pins.setAudioPin(AnalogPin.P0)
                 music.ringTone(988);
             } else if (c == touch.None) {
-                pins.setAudioPin(AnalogPin.P16)
-                music.ringTone(0);
-                //pins.digitalWritePin(DigitalPin.P0, 0);
+                music.stopAllSounds()
+                //music.ringTone(0);
+                pins.digitalWritePin(DigitalPin.P0, 0);
             }
         }
         
