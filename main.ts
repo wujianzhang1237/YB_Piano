@@ -240,7 +240,7 @@ namespace piano {
                 music.ringTone(233);
             } else if (c & touch.B) {               
                 music.ringTone(247);
-            } else if (c == touch.None) {)
+            } else if (c == touch.None) {
                 music.ringTone(0);
                 //pins.digitalWritePin(DigitalPin.P0, 0);
             }
