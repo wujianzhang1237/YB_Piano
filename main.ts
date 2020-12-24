@@ -173,7 +173,7 @@ namespace piano {
         //a = pins.i2cReadNumber(0x50, NumberFormat.UInt8BE, true);
         //b = pins.i2cReadNumber(0x50, NumberFormat.UInt8BE, false);
         //c = (b<<8)|a;
-        c = pins.i2cReadNumber(0x50, NumberFormat.UInt16BE, false);
+        c = pins.i2cReadNumber(0x50, NumberFormat.UInt16LE, false);
         return c;
     }
     
@@ -202,7 +202,7 @@ namespace piano {
         //a = pins.i2cReadNumber(0x50, NumberFormat.UInt8BE, true);
         //b = pins.i2cReadNumber(0x50, NumberFormat.UInt8BE, false);
         //c = (b << 8) | a;
-        c = pins.i2cReadNumber(0x50, NumberFormat.UInt16BE, false);
+        c = pins.i2cReadNumber(0x50, NumberFormat.UInt16LE, false);
 
         if (value == 1) { 
             if ((c & temp) != 0) {
